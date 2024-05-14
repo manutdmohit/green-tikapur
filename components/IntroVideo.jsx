@@ -15,7 +15,7 @@ const IntroVideo = () => {
   return (
     <section className="py-4">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">
+        <h2 className="text-3xl font-bold text-green-800 text-center mb-4">
           Introduction
         </h2>
         <div className="relative w-full h-0 pb-[56.25%] max-w-5xl mx-auto">

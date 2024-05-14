@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-green-600 border-b border-blue-500">
+    <nav className="bg-green-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -19,7 +19,7 @@ const Navbar = () => {
             <button
               type="button"
               id="mobile-dropdown-button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-500 hover:text-white focus:outline-none"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -55,7 +55,7 @@ const Navbar = () => {
               />
 
               <span className="hidden md:block text-white text-2xl font-bold ml-2">
-                Clean Tikapur, Green Tikapur
+                Green Tikapur, Clean Tikapur
               </span>
             </Link>
             {/* <!-- Desktop Menu Hidden below md screens --> */}
@@ -63,27 +63,22 @@ const Navbar = () => {
               <div className="flex space-x-2">
                 <Link
                   href="/"
-                  className={`${
-                    pathname === '/' ? 'bg-gray-700' : ' '
-                  } text-white  hover:bg-gray-900 text-lg hover:text-white rounded-md px-2 py-2 font-bold`}
+                  className="text-white  hover:bg-gray-600 text-2xl hover:text-white rounded-md px-2 py-2 font-bold"
                 >
                   गृहपृष्ठ
                 </Link>
 
                 <Link
                   href="/about-us"
-                  className={`${
-                    pathname === '/about-us' ? 'bg-gray-700' : ' '
-                  } text-white  hover:bg-gray-900 text-lg hover:text-white rounded-md px-3 py-2 font-bold`}
+                  className="text-white hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
                 >
                   हाम्रोबारे
                 </Link>
 
                 <Link
                   href="/contact-us"
-                  className={`${
-                    pathname === '/contact-us' ? 'bg-gray-700' : ' '
-                  } text-white  hover:bg-gray-900 text-lg hover:text-white rounded-md px-3 py-2 font-bold`}
+                  className="
+                   text-white p-5  hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
                 >
                   सम्पर्क
                 </Link>
@@ -100,7 +95,7 @@ const Navbar = () => {
             <Link
               href="/"
               className={`${
-                pathname === '/' ? 'bg-gray-700' : ' '
+                pathname === '/' ? 'bg-gray-500' : ' '
               } text-white block rounded-md px-3 py-2 text-base font-medium `}
             >
               Home
@@ -108,8 +103,8 @@ const Navbar = () => {
             <Link
               href="/about-us"
               className={`${
-                pathname === '/properties' ? 'bg-gray-700' : ''
-              } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+                pathname === '/properties' ? 'bg-gray-500' : ''
+              } text-gray-300 hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
             >
               हाम्रोबारे
             </Link>
@@ -118,8 +113,8 @@ const Navbar = () => {
               <Link
                 href="/contact-us"
                 className={`${
-                  pathname === '/properties/add' ? 'bg-gray-700' : ''
-                } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+                  pathname === '/properties/add' ? 'bg-gray-500' : ''
+                } text-gray-300 hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
               >
                 सम्पर्क
               </Link>
