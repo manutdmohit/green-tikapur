@@ -21,38 +21,7 @@ const HeroSection = () => {
       </h1>
 
       <section className="flex flex-col md:flex-row items-center justify-between h-screen px-4 py-8 bg-gray-50">
-        <div className="md:w-1/2 md:order-1 mb-8 md:mb-0">
-          {/* <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={true}
-            responsive={responsive}
-            ssr={true}
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={1000}
-            keyBoardControl={true}
-            customTransition="all .5"
-            transitionDuration={500}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={['tablet', 'mobile']}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
-          >
-            <div>Item 1</div>
-            <div>Item 2</div>
-            <div>Item 3</div>
-            <div>Item 4</div>
-          </Carousel> */}
-          {/* <Image
-            src="/tkplogo.jpg"
-            alt="Clean Tikapur, Green Tikapur"
-            className="w-full h-auto rounded-lg shadow-lg"
-            width={0}
-            height={0}
-            sizes="100vh"
-            priority={true}
-          /> */}
+        <div className="md:w-1/2 md:order-1 mb-8 md:mb-0 hidden md:block">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -119,12 +88,17 @@ const HeroSection = () => {
             </SwiperSlide>
           </Swiper>
         </div>
+
+        <div className="md:w-1/2 md:order-1 mb-8 md:mb-0 md:hidden">
+          <Image
+            src="/DSC_0038.jpg"
+            alt="About Us"
+            width={900}
+            height={600}
+            className="m-auto"
+          />
+        </div>
         <div className="md:w-1.5/2 md:order-0">
-          <Link href="/" passHref>
-            {/* <Image src="/logo.png" alt="Tikapur" width={150} height={0} priority={true} className="m-auto "
-          objectFit='cover'
-          ' /> */}
-          </Link>
           <h1 className="text-4xl md:text-4xl text-center font-bold text-green-800 mb-4">
             Green Tikapur, Clean Tikapur{' '}
           </h1>
