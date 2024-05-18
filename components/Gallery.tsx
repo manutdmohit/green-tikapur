@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Fade } from 'react-awesome-reveal';
+
 const GallerySection = () => {
   const galleryImages = [
     {
@@ -62,18 +64,25 @@ const GallerySection = () => {
                 key={image.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
               >
-                <Image
-                  src={image.image}
-                  alt={image.title}
-                  width={500}
-                  height={500}
-                  className="w-full h-auto"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-green-800 mb-2">
-                    {image.title}
-                  </h3>
-                </div>
+                <Fade
+                  triggerOnce={true}
+                  direction="up"
+                  cascade={false}
+                  delay={(image.id - 1) * 200}
+                >
+                  <Image
+                    src={image.image}
+                    alt={image.title}
+                    width={500}
+                    height={500}
+                    className="w-full h-auto"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold text-green-800 mb-2">
+                      {image.title}
+                    </h3>
+                  </div>
+                </Fade>
               </div>
             </Link>
           ))}

@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-green-800">
+    <nav className="bg-green-700">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -47,9 +47,9 @@ const Navbar = () => {
             {/* <!-- Logo --> */}
             <Link className="flex flex-shrink-0 items-center" href="/">
               <Image
-                src="/logo.png"
+                src="/gurans.png"
                 alt="Tikapur"
-                width={100}
+                width={80}
                 height={0}
                 priority={true}
               />
