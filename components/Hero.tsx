@@ -19,7 +19,7 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between h-screen px-4 py-8 bg-green-700">
+    <section className="flex flex-col md:flex-row items-center justify-between h-100 px-4 py-8 bg-green-700 ">
       {' '}
       <div className="md:w-1/2 md:order-1 mb-8 md:mb-0 hidden md:block">
         <Swiper
@@ -117,7 +117,7 @@ const HeroSection = () => {
           <h1 className="text-white text-4xl md:text-4xl text-center font-bold mb-4">
             Green Tikapur, Clean Tikapur{' '}
           </h1>
-          <p className="text-lg md:text-xl text-white mb-8 ">
+          <p className="text-lg md:text-xl text-white mb-8">
             कैलाली जिल्ला टीकापुर न.पा. स्थित गठित यस श्री खड्ग बहादुर सिहं
             स्मृति प्रतिष्ठान बिगतका केही वर्षहरु देखि शुरुवात भई कार्य आरम्भ भई
             आएको भएता पनि लिखित रुपमा यो संस्था २०६५ सालमा जिल्ला प्रशासन
