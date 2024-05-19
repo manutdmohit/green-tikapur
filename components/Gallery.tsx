@@ -48,7 +48,6 @@ const GallerySection = () => {
       title: 'Awareness Campaign',
       image: '/DSC_0038.jpg',
     },
-    // Add more gallery images here
   ];
 
   return (

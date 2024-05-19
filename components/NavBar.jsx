@@ -76,6 +76,27 @@ const Navbar = () => {
                 </Link>
 
                 <Link
+                  href="/aim"
+                  className="text-white hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
+                >
+                  उद्देश्य
+                </Link>
+
+                <Link
+                  href="/forestation"
+                  className="text-white hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
+                >
+                  बृक्षारोपण
+                </Link>
+
+                <Link
+                  href="/quote"
+                  className="text-white hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
+                >
+                  भनाईहरु
+                </Link>
+
+                <Link
                   href="/contact-us"
                   className="
                    text-white p-5  hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
@@ -94,31 +115,51 @@ const Navbar = () => {
           <div className="space-y-1 px-2 pb-3 pt-2">
             <Link
               href="/"
-              className={`${
-                pathname === '/' ? 'bg-gray-500' : ' '
-              } text-white block rounded-md px-3 py-2 text-base font-medium `}
+              className="text-white  hover:bg-gray-500 block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
-              Home
+              गृहपृष्ठ
             </Link>
             <Link
               href="/about-us"
-              className={`${
-                pathname === '/properties' ? 'bg-gray-500' : ''
-              } text-gray-300 hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+              className="
+              text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
               हाम्रोबारे
             </Link>
 
-            {
-              <Link
-                href="/contact-us"
-                className={`${
-                  pathname === '/properties/add' ? 'bg-gray-500' : ''
-                } text-gray-300 hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
-              >
-                सम्पर्क
-              </Link>
-            }
+            <Link
+              href="/aim"
+              className="text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+              उद्देश्य
+            </Link>
+
+            <Link
+              href="/forestation"
+              className="text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+              बृक्षारोपण
+            </Link>
+
+            <Link
+              href="/quote"
+              className="text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+              भनाईहरु
+            </Link>
+
+            <Link
+              href="/contact-us"
+              className="text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+              सम्पर्क
+            </Link>
           </div>
         </div>
       )}
