@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -104,9 +105,9 @@ const HeroSection = () => {
               fontSize={20}
               color="yellow"
             />{' '}
-            श्री खड्ग बहादुर सिहं स्मृति प्रतिष्ठान{' '}
+            श्री खड्ग बहादुर सिहं स्मृति प्रतिष्ठान
             <FaQuoteRight
-              className="inline-block mb-5"
+              className="ml-2 inline-block mb-5"
               fontSize={20}
               color="yellow"
             />
@@ -117,12 +118,18 @@ const HeroSection = () => {
             Green Tikapur, Clean Tikapur{' '}
           </h1>
           <p className="text-lg md:text-xl text-white mb-8 ">
-            सफा र हरियाली टीकापुर शहर बनाउनको लागि हाम्रो मिशनमा सामेल हुनुहोस्।
-            सँगै, हामी फरक बनाउन सक्छौं।
+            कैलाली जिल्ला टीकापुर न.पा. स्थित गठित यस श्री खड्ग बहादुर सिहं
+            स्मृति प्रतिष्ठान बिगतका केही वर्षहरु देखि शुरुवात भई कार्य आरम्भ भई
+            आएको भएता पनि लिखित रुपमा यो संस्था २०६५ सालमा जिल्ला प्रशासन
+            कार्यालय धनगढीमा दर्ता भई यस क्षेत्रको सामाजिक, सामुदायिक चेतना स्तर
+            बृद्धिकोलागी परिरहेको एक बिशुद्ध गैर सरकारी संस्था हो ।
           </p>
-          <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md">
-            संलग्न हुनुहोस्
-          </button>
+
+          <Link href="/contact-us">
+            <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md">
+              संलग्न हुनुहोस्
+            </button>
+          </Link>
         </Fade>
       </div>
     </section>
