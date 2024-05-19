@@ -11,11 +11,11 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 mt-5">
-      <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 mt-8">
+      <h1 className="text-4xl font-bold mt-4 mb-8">Contact Us</h1>
       <div className="flex flex-col md:flex-row justify-center  max-w-4xl mx-auto">
         <div className="md:w-1/2 p-8">
-          <h2 className="text-3xl  mb-4 ">सम्पर्क गर्नुहोस्</h2>
+          <h2 className="text-3xl mb-4 ">सम्पर्क गर्नुहोस्</h2>
           <p className="mb-8 text-xl">
             हामी तपाईंबाट सुन्न चाहन्छौं! तपाईंलाई कुनै प्रश्न, प्रतिक्रिया वा
             केही सोध्न चाहनुहुन्छ वा स्वागत गर्नुहुन्छ, हामीलाई सम्पर्क
@@ -26,26 +26,26 @@ const ContactUs = () => {
               <FaMapMarkerAlt className="text-blue-500 mr-4 mb-5" />
               <div>
                 <h3 className="font-semibold">ठेगाना</h3>
-                <p>१२३ मुख्य सडक, सिटीभिल, प्रदेश</p>
+                <p>सेती अञ्चल जिल्ला कैलाली टीकापुर नगरपालिका वडा न. ९</p>
               </div>
             </div>
             <div className="flex items-center">
               <FaPhoneAlt className="text-blue-500 mr-4 mb-5" />
               <div>
                 <h3 className="font-semibold">फोन</h3>
-                <p>(१२३) ४५६-७८९०</p>
+                <p>९८४८४४०२८१, ०९१–५६०१८९</p>
               </div>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="text-blue-500 mr-4 mb-5" />
               <div>
                 <h3 className="font-semibold">ईमेल</h3>
-                <p>example@example.com</p>
+                <p>lalabahadur2017@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 p-8 bg-white rounded-lg shadow-lg">
+        <div className="md:w-1/2 p-8 bg-white rounded-lg shadow-lg md:mb-5">
           <h2 className="text-2xl font-semibold mb-4">Send a Message</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
