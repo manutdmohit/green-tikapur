@@ -8,8 +8,6 @@ import Image from 'next/image';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const pathname = usePathname();
-
   return (
     <nav className="bg-green-700">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -97,6 +95,13 @@ const Navbar = () => {
                 </Link>
 
                 <Link
+                  href="/gallery"
+                  className="text-white hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
+                >
+                  ग्यालेरी
+                </Link>
+
+                <Link
                   href="/contact-us"
                   className="
                    text-white p-5  hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
@@ -151,6 +156,14 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
               भनाईहरु
+            </Link>
+
+            <Link
+              href="/gallery"
+              className="text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+              ग्यालेरी
             </Link>
 
             <Link

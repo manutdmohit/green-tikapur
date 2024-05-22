@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Mukta } from 'next/font/google';
 import './globals.css';
 
+import 'photoswipe/dist/photoswipe.css';
+
 import Navbar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 

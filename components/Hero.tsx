@@ -19,7 +19,7 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between h-100 px-4 py-8 bg-green-700 ">
+    <section className="flex flex-col md:flex-row items-center justify-between h-100 px-4 py-8 bg-green-700">
       {' '}
       <div className="md:w-1/2 md:order-1 mb-8 md:mb-0 hidden md:block">
         <Swiper
@@ -49,41 +49,45 @@ const HeroSection = () => {
           <SwiperSlide>
             {' '}
             <Image
-              src="/DSC_0038.jpg"
+              src="/DSC_0010.JPG"
               alt="About Us"
               width={500}
               height={300}
               className="m-auto "
+              objectFit="cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             {' '}
             <Image
-              src="/DSC_0038.jpg"
+              src="/DSC_2612.JPG"
               alt="About Us"
               width={500}
               height={300}
               className="m-auto "
+              objectFit="cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             {' '}
             <Image
-              src="/DSC_0038.jpg"
+              src="/IMG_0007_1.JPG"
               alt="About Us"
               width={500}
               height={300}
               className="m-auto "
+              objectFit="cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             {' '}
             <Image
-              src="/DSC_0038.jpg"
+              src="/Picture381.jpg"
               alt="About Us"
               width={500}
               height={300}
               className="m-auto "
+              objectFit="cover"
             />
           </SwiperSlide>
         </Swiper>
