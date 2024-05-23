@@ -28,7 +28,7 @@ const AboutPage = () => {
           clickable: true,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper mt-8"
+        className="mySwiper mt-10"
       >
         <SwiperSlide>
           {' '}
@@ -37,7 +37,7 @@ const AboutPage = () => {
             alt="About Us"
             width={600}
             height={300}
-            className="m-auto "
+            className="m-auto mt-8"
             objectFit="cover"
           />
         </SwiperSlide>
@@ -48,7 +48,7 @@ const AboutPage = () => {
             alt="About Us"
             width={600}
             height={300}
-            className="m-auto "
+            className="m-auto mt-8"
             objectFit="cover"
           />
         </SwiperSlide>
@@ -59,7 +59,7 @@ const AboutPage = () => {
             alt="About Us"
             width={600}
             height={300}
-            className="m-auto "
+            className="m-auto mt-8"
             objectFit="cover"
           />
         </SwiperSlide>
@@ -70,7 +70,7 @@ const AboutPage = () => {
             alt="About Us"
             width={600}
             height={300}
-            className="m-auto "
+            className="m-auto mt-8"
             objectFit="cover"
           />
         </SwiperSlide>
@@ -81,7 +81,7 @@ const AboutPage = () => {
             alt="About Us"
             width={600}
             height={300}
-            className="m-auto "
+            className="m-auto mt-8"
             objectFit="cover"
           />
         </SwiperSlide>
