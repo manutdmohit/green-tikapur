@@ -22,10 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mukta.className}>
-        <Navbar />
-        <main>{children}</main>
-
-        <Footer />
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

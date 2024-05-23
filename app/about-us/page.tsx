@@ -4,8 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Carousel } from 'flowbite-react';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -37,58 +35,72 @@ const AboutPage = () => {
           <Image
             src="/DSC_0038.jpg"
             alt="About Us"
-            width={900}
-            height={600}
-            className="m-auto"
+            width={600}
+            height={300}
+            className="m-auto "
+            objectFit="cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           {' '}
           <Image
-            src="/DSC_0038.jpg"
+            src="/DSC_0010.JPG"
             alt="About Us"
-            width={900}
-            height={600}
-            className="m-auto"
+            width={600}
+            height={300}
+            className="m-auto "
+            objectFit="cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           {' '}
           <Image
-            src="/DSC_0038.jpg"
+            src="/DSC_2612.JPG"
             alt="About Us"
-            width={900}
-            height={600}
-            className="m-auto"
+            width={600}
+            height={300}
+            className="m-auto "
+            objectFit="cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           {' '}
           <Image
-            src="/DSC_0038.jpg"
+            src="/IMG_0007_1.JPG"
             alt="About Us"
-            width={900}
-            height={600}
-            className="m-auto"
+            width={600}
+            height={300}
+            className="m-auto "
+            objectFit="cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           {' '}
           <Image
-            src="/DSC_0038.jpg"
+            src="/Picture381.jpg"
             alt="About Us"
-            width={900}
-            height={600}
-            className="m-auto"
+            width={600}
+            height={300}
+            className="m-auto "
+            objectFit="cover"
           />
         </SwiperSlide>
       </Swiper>
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h1 className="text-4xl font-bold text-green-800 mb-6">About Us</h1>
+            <h1 className="text-4xl font-bold text-green-800 mb-6">
+              हाम्रोबारे
+            </h1>
             <p className="text-lg text-gray-700 mb-8">
-              सफा टिकापुर, हरियाली टिकापुर एक सफा र हरियाली टिकापुर सहर बनाउन
+              कैलाली जिल्ला टीकापुर न.पा. स्थित गठित यस श्री खड्ग बहादुर सिहं
+              स्मृति प्रतिष्ठान बिगतका केही वर्षहरु देखि शुरुवात भई कार्य आरम्भ
+              भई आएको भएता पनि लिखित रुपमा यो संस्था २०६५ सालमा जिल्ला प्रशासन
+              कार्यालय धनगढीमा दर्ता भई यस क्षेत्रको सामाजिक, सामुदायिक चेतना
+              स्तर बृद्धिकोलागी परिरहेको एक बिशुद्ध गैर सरकारी संस्था हो ।
+            </p>
+            <p className="text-lg text-gray-700 mb-8">
+              सफा टीकापुर, हरियाली टीकापुर एक सफा र हरियाली टीकापुर सहर बनाउन
               समर्पित समुदाय-संचालित पहल हो। हाम्रो मिशन भनेको चेतना जगाउनु,
               दिगो अभ्यासहरू प्रवर्द्धन गर्नु, र नागरिकहरूलाई स्वस्थ र अधिक
               पर्यावरण-मैत्री वातावरण तर्फ कदम चाल्न प्रेरित गर्नु हो।
@@ -99,7 +111,7 @@ const AboutPage = () => {
               शहर। हरियाली भविष्यतर्फको यो यात्रामा हामीसँग सामेल हुनुहोस्।
             </p>
             <Link
-              href="/get-involved"
+              href="/contact-us"
               className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md transition duration-300"
             >
               संलग्न हुनुहोस्
@@ -123,7 +135,7 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative">
             <Image
-              src="/DSC_0038.jpg"
+              src="/DSC_0010.JPG"
               alt="Our Mission"
               layout="responsive"
               objectFit="cover"
@@ -137,7 +149,7 @@ const AboutPage = () => {
               हाम्रो मिशन
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              हाम्रो लक्ष्य भनेको सफा र हरियाली टिकापुर सहर बनाउने हो चेतना
+              हाम्रो लक्ष्य भनेको सफा र हरियाली टीकापुर सहर बनाउने हो चेतना
               जगाउने, दिगो अभ्यासहरू प्रवर्द्धन गर्ने, र प्रेरणादायी नागरिकहरू
               स्वस्थ र अधिक पर्यावरण मैत्री तर्फ कार्य गर्न वातावरण।
             </p>

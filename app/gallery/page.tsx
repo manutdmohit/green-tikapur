@@ -4,15 +4,27 @@ import Image from 'next/image';
 
 import { Gallery, Item } from 'react-photoswipe-gallery';
 
-const images = [
-  '/DSC_0038.jpg',
-  '/DSC_0010.JPG',
-  '/DSC_2612.JPG',
-  '/IMG_0007_1.JPG',
-  '/20180225_094817.jpg',
-  '/20180216_082125.jpg',
-  '/Picture381.jpg',
-  '/DSC_0050.jpg',
+const images: string[] = [
+  '/GalleryImages/DSC_0176.JPG',
+  '/GalleryImages/DSC_0174.JPG',
+  '/GalleryImages/20180225_091735.jpg',
+  '/GalleryImages/20180225_094547.jpg',
+  '/GalleryImages/20180225_094602.jpg',
+  '/GalleryImages/20180225_094655.jpg',
+  '/GalleryImages/DSC_0029.JPG',
+  '/GalleryImages/DSC_0040.jpg',
+  '/GalleryImages/DSC_2616.JPG',
+  '/GalleryImages/IMG_3106.JPG',
+  '/GalleryImages/IMG_3127.JPG',
+  '/GalleryImages/IMG_3128.JPG',
+  '/GalleryImages/IMG_3143.JPG',
+  '/GalleryImages/IMG_3145.JPG',
+  '/GalleryImages/Picture 382.jpg',
+  '/GalleryImages/Picture 384.jpg',
+  '/GalleryImages/Picture 394.jpg',
+  '/GalleryImages/Picture 401.jpg',
+  '/GalleryImages/Picture 403.jpg',
+  '/GalleryImages/Picture 405.jpg',
 ];
 
 const GalleryPage = () => {

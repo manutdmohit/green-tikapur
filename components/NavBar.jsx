@@ -81,7 +81,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  href="/forestation"
+                  href="/tree-plantation"
                   className="text-white hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
                 >
                   बृक्षारोपण
@@ -143,7 +143,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="/forestation"
+              href="/tree-plantation"
               className="text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
