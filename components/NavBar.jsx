@@ -102,6 +102,13 @@ const Navbar = () => {
                 </Link>
 
                 <Link
+                  href="/prev-experience"
+                  className="text-white hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
+                >
+                  अनुभव
+                </Link>
+
+                <Link
                   href="/contact-us"
                   className="
                    text-white p-5  hover:bg-gray-600 text-2xl hover:text-white rounded-md px-3 py-2 font-bold"
@@ -164,6 +171,14 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
               ग्यालेरी
+            </Link>
+
+            <Link
+              href="/prev-experience"
+              className="text-white hover:bg-gray-500 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+              अनुभव
             </Link>
 
             <Link
