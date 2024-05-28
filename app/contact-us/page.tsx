@@ -26,21 +26,27 @@ const ContactUs = () => {
               <FaMapMarkerAlt className="text-blue-500 mr-4 mb-5" />
               <div>
                 <h3 className="font-semibold">ठेगाना</h3>
-                <p>सेती अञ्चल जिल्ला कैलाली टीकापुर नगरपालिका वडा न. ९</p>
+                <p>टीकापुर नगरपालिका-१, सेती अञ्चल, सुदूरपश्चिम प्रदेश</p>
               </div>
             </div>
             <div className="flex items-center">
               <FaPhoneAlt className="text-blue-500 mr-4 mb-5" />
               <div>
                 <h3 className="font-semibold">फोन</h3>
-                <p>९८४८४४०२८१, ०९१–५६०१८९</p>
+                <p>९८४८४४०२८१</p>
               </div>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="text-blue-500 mr-4 mb-5" />
               <div>
                 <h3 className="font-semibold">ईमेल</h3>
-                <p>saudlalbahadur2017@gmail.com</p>
+                <p>
+                  {' '}
+                  <a href="mailto: saudlalbahadur2017@gmail.com">
+                    {' '}
+                    saudlalbahadur2017@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>
