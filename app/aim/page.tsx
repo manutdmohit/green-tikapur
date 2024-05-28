@@ -1,9 +1,15 @@
-import React from 'react';
+'use client';
+
+import Image from 'next/image';
+
+import { Gallery, Item } from 'react-photoswipe-gallery';
+
+const images: string[] = ['/Image-128_17_56_34.jpg', '/Image-028_17_56_34.jpg'];
 
 const AimPage = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="px-6 py-8 sm:px-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -79,6 +85,41 @@ const AimPage = () => {
           </div>
         </div>
       </div>
+
+      <Gallery>
+        <div className="container max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-green-800 mb-6">
+            आगामी कार्यक्रमहरू
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            {images.map((image, index) => (
+              <div key={index}>
+                <Item
+                  original={image}
+                  thumbnail={image}
+                  width="1000"
+                  height="600"
+                >
+                  {({ ref, open }) => (
+                    <Image
+                      ref={ref}
+                      onClick={open}
+                      src={image}
+                      alt=""
+                      className="object-cover w-[100vw] md:w-[100vw] h-full rounded-xl"
+                      width={0}
+                      height={0}
+                      sizes="50vw"
+                      priority={true}
+                      objectFit="cover"
+                    />
+                  )}
+                </Item>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Gallery>
     </div>
   );
 };
