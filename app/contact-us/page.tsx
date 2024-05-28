@@ -40,7 +40,7 @@ const ContactUs = () => {
               <FaEnvelope className="text-blue-500 mr-4 mb-5" />
               <div>
                 <h3 className="font-semibold">ईमेल</h3>
-                <p>lalabahadur2017@gmail.com</p>
+                <p>saudlalbahadur2017@gmail.com</p>
               </div>
             </div>
           </div>
