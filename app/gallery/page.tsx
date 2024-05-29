@@ -8,6 +8,7 @@ const images: string[] = [
   '/GalleryImages/DSC_0176.JPG',
   '/GalleryImages/DSC_0174.JPG',
   '/GalleryImages/20180225_091735.jpg',
+  '/GalleryImages/IMG20240529090251-003.jpg',
   '/GalleryImages/20180225_094547.jpg',
   '/GalleryImages/20180225_094602.jpg',
   '/GalleryImages/20180225_094655.jpg',
@@ -24,7 +25,6 @@ const images: string[] = [
   '/GalleryImages/Picture 394.jpg',
   '/GalleryImages/Picture 401.jpg',
   '/GalleryImages/Picture 403.jpg',
-  '/GalleryImages/Picture 405.jpg',
 ];
 
 const GalleryPage = () => {
