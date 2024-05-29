@@ -1,5 +1,8 @@
 import Link from 'next/link';
 
+import { FaFacebook, FaPhone } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 py-8 mt-auto">
@@ -8,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold text-white mb-4">About</h3>
             <p className="text-gray-400">
-              हाम्रो मिशन भनेको सचेत र हरियाली टिकापुर सहर निर्माण गर्नु हो,
+              हाम्रो मिशन भनेको सचेत र हरियाली टीकापुर सहर निर्माण गर्नु हो,
               चेतना जगाएर दिगोपनतर्फ ठोस कदम चाल्दै।
             </p>
           </div>
@@ -51,32 +54,34 @@ const Footer = () => {
             <ul>
               <li className="mb-2">
                 <Link
-                  href="https://www.facebook.com/cleantikapurgreentikapur"
+                  href="https://www.facebook.com/profile.php?id=100067491594990"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
                 >
+                  <FaFacebook className="inline mr-2" />
                   Facebook
                 </Link>
               </li>
               <li className="mb-2">
                 <Link
-                  href="https://twitter.com/cleantikapurgreentikapur"
+                  href="tel:9848440281"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
                 >
-                  Twitter
+                  <FaPhone className="inline mr-2" /> 9848440281
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://www.instagram.com/cleantikapurgreentikapur"
+                  href="mailto: saudlalbahadur2017@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
                 >
-                  Instagram
+                  <MdEmail className="inline mr-2" />
+                  saudlalbahadur2017@gmail.com
                 </Link>
               </li>
             </ul>
@@ -84,7 +89,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 border-t border-gray-700 pt-4">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Clean Tikapur, Green Tikapur. All
+            &copy; {new Date().getFullYear()} Green Tikapur, Clean Tikapur. All
             rights reserved.
           </p>
         </div>
