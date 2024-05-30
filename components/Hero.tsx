@@ -38,6 +38,17 @@ const HeroSection = () => {
           <SwiperSlide>
             {' '}
             <Image
+              src="/7G0A9180.png"
+              alt="About Us"
+              width={500}
+              height={300}
+              className="m-auto "
+              objectFit="cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            {' '}
+            <Image
               src="/DSC_0038.jpg"
               alt="About Us"
               width={500}
