@@ -6,6 +6,7 @@ import 'photoswipe/dist/photoswipe.css';
 
 import Navbar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import CallButton from '@/components/CallButton';
 
 const mukta = Mukta({ subsets: ['latin'], weight: '600' });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <CallButton />
         </div>
       </body>
     </html>
