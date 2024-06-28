@@ -1,13 +1,24 @@
-import Link from 'next/link';
+'use client';
 
+import Link from 'next/link';
 import { FaFacebook, FaPhone } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import {
+  FacebookShareButton,
+  WhatsappShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  WhatsappIcon,
+  EmailIcon,
+} from 'react-share';
 
 const Footer = () => {
+  const shareUrl = 'https://www.khadgasmritipratisthan.com';
+
   return (
     <footer className="bg-gray-800 py-8 mt-auto">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-bold text-white mb-4">About</h3>
             <p className="text-gray-400">
@@ -75,7 +86,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="mailto: saudlalbahadur2017@gmail.com"
+                  href="mailto:saudlalbahadur2017@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
@@ -83,6 +94,49 @@ const Footer = () => {
                   <MdEmail className="inline mr-2" />
                   saudlalbahadur2017@gmail.com
                 </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-bold text-white mb-4">Share To</h3>
+            <ul>
+              <li className="mb-2">
+                <FacebookShareButton
+                  url={shareUrl}
+                  quote="Khadga Smriti Pratisthan"
+                  hashtag="#khadgasmritipratisthan"
+                >
+                  <FacebookIcon
+                    size={25}
+                    round={true}
+                    className="inline mr-2"
+                  />
+                  <span className="text-white">Facebook</span>
+                </FacebookShareButton>
+              </li>
+              <li className="mb-2">
+                <WhatsappShareButton
+                  url={shareUrl}
+                  title="Khadga Smriti Pratisthan"
+                  separator=":: "
+                >
+                  <WhatsappIcon
+                    size={25}
+                    round={true}
+                    className="inline mr-2"
+                  />
+                  <span className="text-white">WhatsApp</span>
+                </WhatsappShareButton>
+              </li>
+              <li>
+                <EmailShareButton
+                  url={shareUrl}
+                  subject="Khadga Smriti Pratisthan"
+                  body="Check out the website"
+                >
+                  <EmailIcon size={25} round={true} className="inline mr-2" />
+                  <span className="text-white">Email</span>
+                </EmailShareButton>
               </li>
             </ul>
           </div>
